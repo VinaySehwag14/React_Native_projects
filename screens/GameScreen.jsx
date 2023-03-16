@@ -1,5 +1,7 @@
+import { Text, View } from "react-native";
+
 const GameScreen = () => {
-  return <div>Enter</div>;
+  return <Text>Game Screen</Text>;
 };
 
 export default GameScreen;
