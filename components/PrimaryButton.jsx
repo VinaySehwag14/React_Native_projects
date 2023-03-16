@@ -1,9 +1,9 @@
 import { Text, View, Pressable, StyleSheet } from "react-native";
 
-const PrimaryButton = ({ children }) => {
-  const pressHandler = () => {
-    console.log("its pressed");
-  };
+const PrimaryButton = ({ children, onPress }) => {
+  // const pressHandler = () => {
+  //   console.log("its pressed");
+  // };
 
   //* we can use multiple styles by putting them in an array , like we do below . We can do that in any style
   return (
@@ -14,7 +14,7 @@ const PrimaryButton = ({ children }) => {
             ? [styles.buttonInnerContainer, styles.pressed]
             : styles.buttonInnerContainer
         }
-        onPress={pressHandler}
+        onPress={onPress}
         android_ripple={{ color: "#640233" }}
       >
         <Text style={styles.buttonText}>{children}</Text>
