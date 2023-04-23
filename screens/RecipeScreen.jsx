@@ -5,6 +5,7 @@ import { ScrollView } from "react-native";
 import Recipe from "../components/Recipe";
 import Subtitle from "../components/MealDetail/Subtitle";
 import List from "../components/MealDetail/List";
+import IconButton from "../components/IconButton";
 
 const RecipeScreen = ({ route, navigation }) => {
   //* extracting props from route from mealItem
@@ -17,7 +18,13 @@ const RecipeScreen = ({ route, navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => {
-        return <Button title=" Tap me" onPress={headerButtonPressHandler} />;
+        return (
+          <IconButton
+            icon="star"
+            color="white"
+            onPress={headerButtonPressHandler}
+          />
+        );
       },
     });
   }, [navigation, headerButtonPressHandler]);
