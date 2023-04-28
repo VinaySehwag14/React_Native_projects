@@ -16,5 +16,3 @@ const ExpensesList = ({ expenses }) => {
 };
 
 export default ExpensesList;
-
-const styles = StyleSheet.create({});
