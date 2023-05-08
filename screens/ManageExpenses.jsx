@@ -15,9 +15,15 @@ const ManageExpenses = ({ route, navigation }) => {
     });
   }, [navigation, isEditing]);
 
-  function deleteExpenseHandler() {}
-  function cancelHandler() {}
-  function confirmHandler() {}
+  function deleteExpenseHandler() {
+    navigation.goBack();
+  }
+  function cancelHandler() {
+    navigation.goBack();
+  }
+  function confirmHandler() {
+    navigation.goBack();
+  }
   return (
     <View style={styles.container}>
       <View style={styles.buttons}>
@@ -57,11 +63,11 @@ const styles = StyleSheet.create({
   },
   button: {
     minWidth: 120,
-    marginHorizontaln: 8,
+    marginHorizontal: 8,
   },
   deleteContainer: {
     marginTop: 16,
-    padding: 8,
+    paddingTop: 8,
     borderTopWidth: 2,
     borderTopColor: GlobalStyles.colors.primary200,
     alignItems: "center",
