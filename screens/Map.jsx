@@ -8,8 +8,8 @@ const Map = () => {
   const navigation = useNavigation();
   const [selectedLocation, setSelectedLocation] = useState();
   const region = {
-    latitude: 37.78,
-    longitude: -122.43,
+    latitude: 28.61332245835333,
+    longitude: 77.22928279759516,
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421,
   };
