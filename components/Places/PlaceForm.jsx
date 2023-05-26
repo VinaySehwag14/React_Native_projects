@@ -21,7 +21,7 @@ const PlaceForm = ({ onCreatePlace }) => {
 
   //*used this because we add pickLoc function as dependency in Location picker
   const pickLocationHandler = useCallback((location) => {
-    console.log(location, 'this is plocasd');
+    // console.log(location, 'this is plocasd');
     setPickedLocation(location);
   }, []);
 
